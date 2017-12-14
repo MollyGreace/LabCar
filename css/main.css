@@ -131,16 +131,28 @@ body {
   /* Section Home */
   .row-home {
     background-image: url(../assets/images/taxi.jpg);
-    background-position: center;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
   }
-  
 
-  .aside-desktop h2 {
-    font-size: xx-large;
+  .aside-home {
     font-weight: bolder;
+    height: max-content;
+    top: 30%;
+    padding: 2em;
+    width: 450px;
+  }
+  
+  .aside-desktop h2 {
+    font-size: ;
+    font-weight: bolder;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .labcar-logo-home {
@@ -149,17 +161,30 @@ body {
 
   .btn-login,
   .btn-drive {
-    font-weight: bolder;
+    font-weight: 900;
     border-color: #fff;
     color: black;
     cursor: pointer;
   }
-  
-  p {}
 
+  .line {    
+  margin: 0px 20px;
+  width: 33%;    
+  border-top: 1px solid #fff;
+  position: relative;
+  top: 10px;
+  float: left;
+  }
+
+  .text-in-line {    
+  font-weight: bold;
+  float: left;
+  }
+  
   .aside-mobile {
     display: none;
   }
+  
   /* Section App */
   /* Section Conduce */
   /* Section Tarifas */
