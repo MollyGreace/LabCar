@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--FUENTE-->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -24,13 +24,12 @@
   <!--ENCABEZADO: Logo y menú-->
   <header class="container">
     <div class="row">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+      <nav class="navbar navbar-default nav-format">
+        <div class="container-fluid container-title-color">
           <!-- Logo y Menú hamburguesa -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -43,38 +42,32 @@
           <!-- Lista de menús -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">Viaja</a>
-              </li>
-              <li>
-                <a href="#">Conduce</a>
-              </li>
-              <li>
-                <a href="#">Inicia Sesión</a>
-              </li>
+              <li><a href="#section-home">Viaja</a></li>
+              <li><a href="#section-drive">Conduce</a></li>
+              <li><a href="#">Inicia Sesión</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
       </nav>
-
-
-
     </div>
   </header>
   <!--FIN ENCABEZADO-->
 
   <!--SECTION HOME-->
-  <section class="container-fluid section-home">
+  <section class="container-fluid" id="section-home">
     <div class="row row-home">
-      <article class="col-xs-6 col-xs-offset-7 article-home">
-        <h1>Comienza a viajar
+      <aside class="col-xs-9 article-home">
+        <h1>
+          Comienza a viajar
           <br> con
           <img class="logo-home" src="assets/images/logoBlanco.png" alt="LabCar">
         </h1>
         <br>
         <button type="button" class="btn btn-default btn-download-app">Descarga el app</button>
+      </aside>
+      <article class="">
+
         <!--div>h3: Disfruta del viaje eres dueño de tu tiempo</div>
         <div>P: Viaja con Labcar Boton: regístrate</div>
         <div> o bien  </div>
@@ -85,7 +78,7 @@
   <!--FIN SECTION HOME-->
 
   <!--SECTION APP-->
-  <section class="container-fluid section-app">
+  <section class="container-fluid" id="section-app">
     <article class="row row-app">
       <div class="col-xs-12 box-app">
         <p class="text-center">La nueva app</p>
@@ -104,7 +97,7 @@
   <!--FIN SECTION APP-->
 
   <!--SECTION CONDUCE-->
-  <section class="container-fluid">
+  <section class="container-fluid" id="section-drive">
     <div class="row row-drive">
       <article class="col-xs-12">
       </article>
@@ -118,8 +111,8 @@
   <!--FIN SECTION CONDUCE-->
 
   <!--SECTION TARIFAS-->
-  <section class="container-fluid section-rate">
-    <div class="row row-rate">
+  <section class="container-fluid" id="section-rate">
+    <div class="row  row-rate">
       <div class="col-xs-12">
         <h3>Tarifas</h3>
         <h4>Consulta las tarifas LabCar aquí</h4>
@@ -146,7 +139,9 @@
             </div>
           </div>
         </form>
-        <figure><img src="assets/images/mapas.png" alt="mapa"></figure>
+        <figure>
+          <img src="assets/images/mapas.png" alt="mapa">
+        </figure>
       </div>
       <!--div>Columna 1</div>
       <div>Columna 2</div-->
@@ -155,7 +150,7 @@
   <!--FIN SECTION TARIFAS-->
 
   <!--SECTION FOOTER-->
-  <footer class="container-fluid section-footer">
+  <footer class="container-fluid" id="section-footer">
     <div class="row">
       <figure class="col-12">
         <img src="assets/images/logoBlanco.png" alt="logo-LabCar">

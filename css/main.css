@@ -1,24 +1,37 @@
 /* Los estilos de tu proyecto */
-* {
+*, body {
   font-family: 'Raleway', sans-serif;
+  color: #fff;
 }
 
 /* Section encabezado */
+ .nav-format{
+  background-color: #fff;
+  border-color: white;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 3%
+ }
 
-
-/* Section Home */
+ .container-title-color {
+    background-color: #fff;
+ }
+  
+  
+/* Section Home */  
 .row-home {
   background-image: url(../assets/images/taxi.jpg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
   height: 100vh;
 }
 
 .article-home {
   background-color: #f7b617;
+  float: right;
   height: 245px;
-  /* margin-top: 100%; */
   width: 330px;
 }
 
@@ -37,54 +50,71 @@ h1 {
 }
 
 
-/* Section App */
-.row-app {
-  background-color: #f7b617;
-  color: #fff;
-}
-
-.box-app {
-  border-color: #fff;
-}
-
+/* Section App */ 
+  
 /* Section Conduce */
-.row-drive {
-  background-image: url(../assets/images/conduce.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-}
-
-/* Section Tarifas */
-.row-rate {
-  background-color: #f7b617;
-  color: #fff;
-  height: 100vh;
-}
-
-
+ 
+/* Section Tarifas */  
+  
 /* Section Footer */
-.section-footer {
-  background-color: #2b2b2b;
-  color: #fff;
+ 
+
+@media (max-width: 767px) {
+ 
+  /* Section App */
+  .row-app {
+    background-color: #f7b617;
+    color: #fff;
+  }
+  
+  .box-app {
+    border-color: #fff;
+  }
+  
+  /* Section Conduce */
+  .row-drive {
+    background-image: url(../assets/images/conduce.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Section Tarifas */
+  .row-rate {
+    background-color: #f7b617;
+    color: #fff;
+    height: 100vh;
+  }
+  
+  
+  /* Section Footer */
+  .section-footer {
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  
+  h5 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h5 a:hover {  
+    text-decoration: #f7b617;
+    color: #f7b617;
+    transition: 2s;
+  }
+  .fa:hover {
+    cursor: pointer;
+    color: #f7b617;
+    transform-style: preserve-3d;
+  }
+  .go-market {
+    cursor: pointer;  
+  }
 }
 
-h5 a {
-  color: #fff;
-  text-decoration: none;
-}
+@media (min-width: 768px) {
+  /* Encabezado */
 
-h5 a:hover {  
-  text-decoration: #f7b617;
-  color: #f7b617;
-  transition: 2s;
-}
-.fa:hover {
-  cursor: pointer;
-  color: #f7b617;
-  transform-style: preserve-3d;
-}
-.go-market {
-  cursor: pointer;  
 }
