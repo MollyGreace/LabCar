@@ -1,25 +1,30 @@
 /* Los estilos de tu proyecto */
-*, body {
+
+*,
+body {
   font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
+
 /* Section encabezado */
- .nav-format{
+
+.nav-format {
   background-color: #fff;
   border-color: white;
   color: #000;
   font-weight: 700;
   margin-bottom: 0;
   padding: 3%
- }
+}
 
- .container-title-color {
-    background-color: #fff;
- }
-  
-  
-/* Section Home */  
+.container-title-color {
+  background-color: #fff;
+}
+
+
+/* Section Home */
+
 .row-home {
   background-image: url(../assets/images/taxi.jpg);
   background-position: center;
@@ -28,18 +33,23 @@
   height: 100vh;
 }
 
-.article-home {
+.aside-home {
   background-color: #f7b617;
+  box-sizing: border-box;
   float: right;
-  height: 245px;
-  width: 330px;
+  font-weight: bolder;
+  height: max-content;
+  top: 50%;
+  padding: 2em;
+  width: 345px;
 }
 
-h1 {
-  color: #fff;
+.aside-mobile h2 {
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
-.logo-home {
+.labcar-logo-home {
   height: 20px;
 }
 
@@ -47,31 +57,32 @@ h1 {
   font-weight: bolder;
   border-color: #fff;
   color: black;
+  cursor: pointer;
 }
 
 
-/* Section App */ 
-  
-/* Section Conduce */
- 
-/* Section Tarifas */  
-  
-/* Section Footer */
- 
+/* Section App */
 
-@media (max-width: 767px) {
- 
-  /* Section App */
+
+/* Section Conduce */
+
+
+/* Section Tarifas */
+
+
+/* Section Footer */
+
+
+/*@media (max-width: 767px) {
+  /* Section App 
   .row-app {
     background-color: #f7b617;
     color: #fff;
   }
-  
   .box-app {
     border-color: #fff;
   }
-  
-  /* Section Conduce */
+  /* Section Conduce 
   .row-drive {
     background-image: url(../assets/images/conduce.jpg);
     background-position: center center;
@@ -79,27 +90,22 @@ h1 {
     background-size: cover;
     height: 100vh;
   }
-  
-  /* Section Tarifas */
+  /* Section Tarifas 
   .row-rate {
     background-color: #f7b617;
     color: #fff;
     height: 100vh;
   }
-  
-  
-  /* Section Footer */
+  /* Section Footer 
   .section-footer {
     background-color: #2b2b2b;
     color: #fff;
   }
-  
   h5 a {
     color: #fff;
     text-decoration: none;
   }
-  
-  h5 a:hover {  
+  h5 a:hover {
     text-decoration: #f7b617;
     color: #f7b617;
     transition: 2s;
@@ -110,11 +116,52 @@ h1 {
     transform-style: preserve-3d;
   }
   .go-market {
-    cursor: pointer;  
+    cursor: pointer;
+  }
+}*/
+@media (max-width: 767px) {
+   /* Section Home */
+  .aside-desktop {
+    display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* Encabezado */
 
+  /* Section Home */
+  .row-home {
+    background-image: url(../assets/images/taxi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+
+  .aside-desktop h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+  .labcar-logo-home {
+    height: 20px;
+  }
+
+  .btn-login,
+  .btn-drive {
+    font-weight: bolder;
+    border-color: #fff;
+    color: black;
+    cursor: pointer;
+  }
+  
+  p {}
+
+  .aside-mobile {
+    display: none;
+  }
+  /* Section App */
+  /* Section Conduce */
+  /* Section Tarifas */
+  /* Section Footer */
 }
