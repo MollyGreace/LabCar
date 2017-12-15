@@ -64,7 +64,6 @@ body {
 /* Section App */
 .row-app {
   background-color: #f7b617;
-  color: #fff;
 }
 
 .box-app {
@@ -134,11 +133,19 @@ body {
   .aside-desktop {
     display: none;
   }
+
+  .row-app-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
+  
+/* Section Home */
+  .aside-mobile {
+    display: none;
+  }
 
-  /* Section Home */
   .row-home {
     background-image: url(../assets/images/taxi.jpg);
     background-position: 100% 100%;
@@ -191,11 +198,40 @@ body {
   float: left;
   }
   
-  .aside-mobile {
+  
+/* Section App */
+  .row-app {
     display: none;
   }
-  
-  /* Section App */
+
+  .row-app-desktop {
+    background-color: #f7b617;
+  }
+
+  .box-app-desktop {
+    border: 1px solid #fff;
+    border-left: none;
+    max-height: max-content;
+    max-width: 90%;    
+    margin: 5% 5% 5% 0;
+    padding: 5%;
+  }
+
+  .text-app h3{
+    font-weight: 900;
+    font-size: 30px;    
+    line-height: 3em;
+  }
+
+  .text-app p {
+    font-size: 20px;
+    line-height: em;
+  }
+
+
+
+
+
   /* Section Conduce */
   /* Section Tarifas */
   /* Section Footer */
