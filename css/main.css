@@ -22,6 +22,24 @@ body {
   background-color: #fff;
 }
 
+#myModal {
+  color: #000;
+}
+
+.login-content {
+ background-color: #08ac9d;
+} 
+
+.login-head .fa-user-circle {
+  font-size: 10em;
+}
+
+.btn-login-color {
+  background-color: #f7b617;
+  border: 1px solid #f7b617;
+  color: #fff;
+  font-weight: 900;
+}
 
 /* Section Home */
 
