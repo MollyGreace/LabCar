@@ -91,8 +91,7 @@ body {
 .bg-article {
   background-color: rgba(64, 64, 65, 0.349);
   height: 100vh; 
-  padding: 25% 15%;
-  /*col-xs-offset-1 */
+  padding: 20% 5%;
 }
 
 .bg-article h4{
@@ -256,7 +255,17 @@ body {
 
 
 /* Section Conduce */
-kkkkkkkkkk;
+.bg-article {
+  max-width: max-content;
+}
+.bg-article h4{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.bg-article p {
+  font-size: 15px;
+}
   /* Section Tarifas */
   /* Section Footer */
 }
