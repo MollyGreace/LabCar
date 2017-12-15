@@ -80,6 +80,39 @@ body {
 
 
 /* Section Conduce */
+.row-drive {
+  background-image: url(../assets/images/conduce.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-article {
+  background-color: rgba(64, 64, 65, 0.349);
+  height: 100vh; 
+  padding: 25% 15%;
+  /*col-xs-offset-1 */
+}
+
+.bg-article h4{
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.bg-article p {
+  font-size: 20px;
+}
+
+.btn-drive {
+  background-color: #f7b617;
+  border: 1px solid #f7b617;
+  color: #fff;
+  font-weight: bolder;
+}
+
+
+
 
 
 /* Section Tarifas */
@@ -90,14 +123,7 @@ body {
 
 /*@media (max-width: 767px) {
 
-  /* Section Conduce 
-  .row-drive {
-    background-image: url(../assets/images/conduce.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
+  
   /* Section Tarifas 
   .row-rate {
     background-color: #f7b617;
@@ -177,7 +203,7 @@ body {
   }
 
   .btn-login,
-  .btn-drive {
+  .btn-home-drive {
     font-weight: 900;
     border-color: #fff;
     color: black;
@@ -229,10 +255,8 @@ body {
   }
 
 
-
-
-
-  /* Section Conduce */
+/* Section Conduce */
+kkkkkkkkkk;
   /* Section Tarifas */
   /* Section Footer */
 }
