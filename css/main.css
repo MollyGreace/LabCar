@@ -129,17 +129,17 @@ body {
   line-height: 2em;
 }
 
-.form-ruta input{
+.form-route input{
   background-color: #f7b617;
   border: 1px solid #ffF;
   color: #fff;
 }
 
-.form-ruta input::placeholder{
+.form-route input::placeholder{
   color: #fff;
 }
 
-.btn-ruta {
+.btn-route {
   color: #000;
   font-size: 16px;
   font-weight: 900;
@@ -292,6 +292,14 @@ body {
   .bg-article p {
     font-size: 15px;
   }
+
+
+  /* Section Tarifas */
+.row-rate {
+  background-color: #f7b617;
+  color: #fff;
+  height: 80vh;
+}
 
 
   /* Section Tarifas */
