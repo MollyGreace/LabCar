@@ -62,6 +62,22 @@ body {
 
 
 /* Section App */
+.row-app {
+  background-color: #f7b617;
+  color: #fff;
+}
+
+.box-app {
+  border: 1px solid #fff;
+  max-height: max-content;
+  max-width: 90%;
+  margin: 5%;
+  padding: 10%;
+}
+
+.text-destinity {
+  margin-left: 3%;
+}
 
 
 /* Section Conduce */
@@ -74,14 +90,7 @@ body {
 
 
 /*@media (max-width: 767px) {
-  /* Section App 
-  .row-app {
-    background-color: #f7b617;
-    color: #fff;
-  }
-  .box-app {
-    border-color: #fff;
-  }
+
   /* Section Conduce 
   .row-drive {
     background-image: url(../assets/images/conduce.jpg);
@@ -119,6 +128,7 @@ body {
     cursor: pointer;
   }
 }*/
+
 @media (max-width: 767px) {
    /* Section Home */
   .aside-desktop {
