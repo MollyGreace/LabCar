@@ -168,7 +168,9 @@ body {
 .row-logo{
   padding: 2% 0 0 0;
 }
-
+#section-footer {
+  background-color: #303030;
+}
 .row-logo:hover {
   cursor: pointer;
 }
