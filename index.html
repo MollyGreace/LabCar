@@ -50,44 +50,45 @@
               <li>
                 <a href="#" type="button" role="button" data-toggle="modal" data-target="#modalLogin">Inicia Sesión</a>
                 <!-- Modal -->
-                <!--form class="container"-->
-
-                <div class="modal fade" id="modalLogin" role="">
+                <div class="modal fade modal-login" id="modalLogin">
                   <!-- Modal dialog-->
                   <div class="modal-dialog">
-
                     <!-- Modal content-->
                     <div class="modal-content login-content">
-
                       <div class="modal-header login-head">
                         <button type="button" class="close text-dark" data-dismiss="modal">&times;</button>
-                        <div class="text-center">
-                          <i class="fa fa-user-circle"></i>
+                        <div class="text-center center-block bg-user">
+                          <i class="fa fa-user-circle bg-icon"></i>
                         </div>
                       </div>
 
-                      <div class="modal-body text-center">
-                        <div class="input-group">
-                          <span class="input-group-addon" id="basic-addon1">
-                            <i class="fa fa-user"></i>
-                          </span>
-                          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                        </div>
-                        <br>
-                        <div class="input-group">
-                          <span class="input-group-addon fa ">
-                            <i class="fa fa-lock"></i>
-                          </span>
-                          <input type="text" class="form-control" placeholder="Password">
-                        </div>
-                        <br>
-                        <button type="button" class="btn btn-default d-flex justify-content-center btn-login-color" data-dismiss="modal">LOG IN</button>
-                        <br>
-                        <p class="text-left">Forget password?
-                          <a href="#" class="text-danger">Click here</a>
-                        </p>
+                      <div class="modal-body">
+                        <form action="formLogin" class="bg-form-login center-block">
+                          <br>
+                          <div class="form-group col-xs-12">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">
+                                <i class="fa fa-user"></i>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-12">
+                            <div class="input-group">
+                              <span class="input-group-addon fa ">
+                                <i class="fa fa-lock"></i>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button type="button" class="btn btn-warning btn-lg center-block btn-login-color" data-dismiss="modal">LOG IN</button>
+                            <h6 class="">Forget password?
+                              <a href="#" class="text-danger">Click here</a>                            
+                            </h6>
+                          </div>
+                        </form>
                       </div>
-
                     </div>
                     <!-- Modal content-->
 
@@ -95,7 +96,6 @@
                   <!-- Modal dialog-->
 
                 </div>
-                <!--/form-->
                 <!-- Modal -->
               </li>
             </ul>
@@ -111,7 +111,7 @@
   <!--SECTION HOME-->
   <section class="container-fluid" id="section-home">
     <div class="row row-home">
-      <aside class="col-xs-9 aside-home">
+      <aside class="col-xs-9 aside-home center-block">
         <div class="aside-mobile">
           <h2>Comienza a viajar
             <br>con
@@ -132,78 +132,143 @@
           <button type="button" class="btn btn-default btn-register" role="button" data-toggle="modal" data-target="#modalRegister">REGÍSTRATE</button>
 
           <!-- Modal -->
-          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="modalRegister">
-
+          <div class="modal fade modal-register" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="modalRegister">
             <!-- Modal dialog-->
             <div class="modal-dialog" role="document">
               <!-- Modal content-->
               <div class="modal-content register-content">
                 <div class="modal-body">
                   <button type="button" class="close text-dark" data-dismiss="modal">&times;</button>
-                  <div class="row">
-                    <button type="submit" class="btn btn-dark btn-lg col-md-6 col-md-offset-3">Ya tienes una cuenta?</button>
-                  </div>
-
-                  <div class="form-group" style="color: black">
-                    O CREA UNA CUENTA NUEVA
-                  </div>
-
-                  <div class="form-group row">
-                    <div class="col-xs-6">
+                  <form action="formRegister">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-lg btn-group-justified btn-dark">¿Ya tienes una cuenta?</button>
+                      <div class="form-group text-center">O CREA UNA CUENTA NUEVA</div>
+                    </div>
+  
+                    <div class="form-group row">
+                      <div class="col-md-6">
                         <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputAdress" placeholder="Apellido">
+                      </div>                      
                     </div>
-                    <div class="col-xs-6">
-                      <input type="text" class="form-control" id="inputAdress" placeholder="Apellido">
+  
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico: example@correo.pe">
+                    </div>
+  
+                    <div class="form-group">
+                      <input type="tel" class="form-control" id="inputPhone" placeholder="Teléfono">
+                    </div>
+  
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                    </div>
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+                    </div>
+  
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="inputCode" placeholder="(Opcional) Código de invitación">
+                    </div>
+  
+                    <div class="form-group">
+                      <div class="dropdown">
+                      <button class="btn btn-default btn-lg btn-group-justified" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <strong>¿Cómo te enteraste de nosotros?</strong>
+                        <span class="caret"></span>
+                      </button>
+                      </div>
+                    </div>
+  
+                    <div class="form-group">
+                      <button type="button" class="btn btn-info btn-lg btn-group-justified" data-dismiss="modal">ENVIAR</button>
                     </div>
                   </div>
-
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico: example@correo.pe">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="Teléfono">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputCode" placeholder="(Opcional) Código de invitación">
-                  </div>
-
-                  <div class="dropdown">
-                    <button id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      ¿Cómo te enteraste de nosotros?
-                      <span class="caret"></span>
-                    </button>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">ENVIAR</button>
-                </div>
+                  </form>
               </div>
               <!-- Modal content-->
             </div>
             <!-- Modal dialog-->
-
           </div>
           <!-- Modal -->
-
           <br>
           <br>
-
           <div class="line">&nbsp;</div>
           <p class="text-center text-in-line">O bien</p>
           <div class="line">&nbsp;</div>
 
           <br>
           <br>
-          <button type="button" class="btn btn-default btn-home-drive">Conviértete en un conductor</button>
+          <button type="button" class="btn btn-default btn-home-drive" role="button" data-toggle="modal" data-target="#modalDrive">Conviértete en un conductor</button>
+          
+          <!-- Modal -->
+          <div class="modal fade modal-drive" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" id="modalDrive">
+            <!-- Modal dialog-->
+            <div class="modal-dialog" role="document">
+              <!-- Modal content-->
+              <div class="modal-content drive-content">
+                <div class="modal-body">
+                  <button type="button" class="close text-dark" data-dismiss="modal">&times;</button>
+                  <form action="formDrive">
+                    <div class="form-group">
+                      <p>¿Tienes vehículo de 4 puertas?</p>
+                      <select class="form-control">
+                        <option>Sí</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                                     
+                    <div class="form-group">
+                      <p><strong>Marca</strong></p>
+                      <select class="form-control">
+                        <option>Elige tu marca de vehículo</option>
+                        <option>marca1</option>
+                        <option>marca2</option>
+                      </select>
+                      <h6>¿No ves tu vehículo en la lista?. Envía un correo electrónico a:
+                        <br>
+                        <a href="" class="text-info"><strong> sociosmdv@uber.com</strong></a>
+                      </h6>
+                    </div>
+                    
+                    <div class="form-group">
+                      <p>Modelo</p>
+                      <select class="form-control">
+                        <option>modelo1</option>
+                        <option>modelo2</option>
+                        <option>modelo3</option>
+                      </select>                     
+                    </div>                 
+
+                    <div class="form-group">
+                      <p>Año</p>
+                      <select class="form-control">
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                      </select>                      
+                    </div>
+                    
+                    <div class="form-group">
+                      <p>Número de la matrícula</p>
+                      <input type="text" class="form-control" id="inputMatricula" placeholder="Número de Matrícula">
+                      <h6>La información de la matrícula ayuda a los clientes a identificar tu vehículo</h6>                  
+                    </div>
+
+                    <div class="form-group">
+                      <button type="button" class="btn btn-info btn-lg btn-group-justified" data-dismiss="modal">ENVIAR</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Modal content-->
+            </div>
+            <!-- Modal dialog-->
+          </div>
+          <!-- Modal -->
         </div>
       </aside>
     </div>
@@ -431,10 +496,6 @@
 
   </footer>
   <!--FIN SECTION FOOTER-->
-
-
-
-
 
   <!--JS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

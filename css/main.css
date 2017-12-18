@@ -3,12 +3,17 @@
 *,
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+#section-home,
+#section-app,
+#section-drive,
+#section-rate,
+#section-footer {
   color: #fff;
 }
 
-
 /* Section encabezado */
-
 .nav-format {
   background-color: #fff;
   border-color: white;
@@ -22,24 +27,6 @@ body {
   background-color: #fff;
 }
 
-#myModal {
-  color: #000;
-}
-
-.login-content {
- background-color: #08ac9d;
-} 
-
-.login-head .fa-user-circle {
-  font-size: 10em;
-}
-
-.btn-login-color {
-  background-color: #f7b617;
-  border: 1px solid #f7b617;
-  color: #fff;
-  font-weight: 900;
-}
 
 /* Section Home */
 
@@ -57,7 +44,7 @@ body {
   float: right;
   font-weight: bolder;
   height: max-content;
-  top: 50%;
+  top: 40%;
   padding: 2em;
   width: 345px;
 }
@@ -91,6 +78,10 @@ body {
   max-width: 90%;
   margin: 5%;
   padding: 10%;
+}
+
+.box-app  img {
+  width: 270px;
 }
 
 .text-destinity {
@@ -174,12 +165,6 @@ body {
 
 
 /* Section Footer */
-
-#section-footer {
-  background-color: #2b2b2b;
-  color: #fff;
-}
-
 .row-logo{
   padding: 2% 0 0 0;
 }
@@ -234,10 +219,12 @@ h5 a:hover {
 }
 
 @media (min-width: 768px) {
+  
   /* Section Home */
   .aside-mobile {
     display: none;
   }
+  
   .row-home {
     background-image: url(../assets/images/taxi.jpg);
     background-position: 100% 100%;
@@ -245,6 +232,7 @@ h5 a:hover {
     background-size: cover;
     height: 100vh;
   }
+  
   .aside-home {
     font-weight: bolder;
     height: max-content;
@@ -252,17 +240,21 @@ h5 a:hover {
     padding: 2em;
     width: 450px;
   }
+  
   .aside-desktop h2 {
     font-size: ;
     font-weight: bolder;
   }
+  
   h3 {
     font-size: 20px;
     font-weight: 700;
   }
+  
   .labcar-logo-home {
     height: 20px;
   }
+  
   .btn-login,
   .btn-home-drive {
     font-weight: 900;
@@ -270,6 +262,7 @@ h5 a:hover {
     color: black;
     cursor: pointer;
   }
+  
   .line {
     margin: 0px 20px;
     width: 33%;
@@ -278,17 +271,23 @@ h5 a:hover {
     top: 10px;
     float: left;
   }
+  
   .text-in-line {
     font-weight: bold;
     float: left;
   }
+  
+  
   /* Section App */
+  
   .row-app {
     display: none;
   }
+  
   .row-app-desktop {
     background-color: #f7b617;
   }
+  
   .box-app-desktop {
     border: 1px solid #fff;
     border-left: none;
@@ -297,26 +296,33 @@ h5 a:hover {
     margin: 5% 5% 5% 0;
     padding: 5%;
   }
+
   .text-app h3 {
     font-weight: 900;
     font-size: 30px;
     line-height: 3em;
   }
+  
   .text-app p {
     font-size: 20px;
     line-height: em;
   }
+  
+  
   /* Section Conduce */
   .bg-article {
     max-width: max-content;
   }
+
   .bg-article h4 {
     font-weight: 900;
     font-size: 20px;
   }
+
   .bg-article p {
     font-size: 15px;
   }
+
   /* Section Tarifas */
   .row-rate {
     background-color: #f7b617;
@@ -328,4 +334,45 @@ h5 a:hover {
   .menu-footer-mobile {
     display: none;
   }
+}
+
+/* MODALES */
+/* LOGIN */
+.modal-login .login-head .bg-user{
+  background-color: #337ab7;
+  height: max-content;
+  width: max-content;
+}
+
+.modal-login .login-content {
+ background-color: #08ac9d;
+} 
+
+.modal-login .login-head .bg-user .bg-icon{
+  color: #5bc0de;
+}
+
+.login-head .fa-user-circle {
+  font-size: 10em;
+}
+
+.modal-body .bg-form-login {
+  background-color: #eee;
+  width: 60%;
+}
+.btn-login-color {
+  background-color: #f7b617;
+  border: 1px solid #f7b617;
+  color: #fff;
+}
+
+/* MODAL REGISTRO */
+.modal-register .register-content,
+.modal-drive .drive-content {
+  background-color: #777;
+}
+
+.modal-register  .btn-dark {
+  background-color: #222;
+  color: #fff;
 }

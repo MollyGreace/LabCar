@@ -6,3 +6,7 @@ $('#modalLogin').on('shown.bs.modal', function () {
 $('#modalRegister').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
+
+$('#modalDrive').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
